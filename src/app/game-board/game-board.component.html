@@ -1,14 +1,14 @@
-<div fxLayout>
-    <div fxLayout="column">
+<div fxLayout="column">
+    <div fxLayout="row">
         <h6>Alive</h6>
         <div *ngFor="let card of cardPool">
-            <button (click)="playCard(card)">{{card.rank}} {{card.name}}</button><br>
+            <app-card [character]="card" (click)="playCard(card)"></app-card>
         </div>
     </div>
-    <div fxLayout="column">
+    <div fxLayout="row">
         <h6>Dead</h6>
-        <div *ngFor="let spentCard of spentCards">
-            <button (click)="unPlayCard(spentCard)">{{spentCard.rank}} {{spentCard.name}}</button>
+        <div *ngFor="let card of spentCards">
+            <app-card [character]="card" (click)="unPlayCard(card)"></app-card>
         </div>
     </div>
 </div>
