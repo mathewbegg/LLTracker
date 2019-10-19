@@ -15,6 +15,8 @@ export class GameBoardComponent implements OnInit {
   cardPool: CharacterUI[] = [];
   spentCards: CharacterUI[] = [];
 
+  resetOpen = false;
+
   constructor(private _gameService: GameService) { }
 
   ngOnInit() {
@@ -30,6 +32,18 @@ export class GameBoardComponent implements OnInit {
 
   unPlayCard(card: CharacterUI) {
     this._gameService.unPlayCharacter(card);
+  }
+
+  toggleReset() {
+    this.resetOpen = !this.resetOpen;
+  }
+
+  newGame() {
+    this._gameService.newGame();
+    this.resetOpen = false;
+    this._gameService.getCardSet().subscribe({next: cardSet => this.cardSet = cardSet});
+    this._gameService.getCardPool().subscribe({next: cardPool => this.cardPool = cardPool});
+    this._gameService.getSpentCards().subscribe({next: spentCards => this.spentCards = spentCards});
   }
 
 }
