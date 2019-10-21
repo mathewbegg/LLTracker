@@ -4,11 +4,13 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 
 import { AppComponent } from './app.component';
 import { GameBoardComponent } from './game-board/game-board.component';
+import { CardComponent } from './card/card.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    GameBoardComponent
+    GameBoardComponent,
+    CardComponent
   ],
   imports: [
     BrowserModule,

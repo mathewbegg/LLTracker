@@ -1,14 +1,22 @@
-<div fxLayout>
-    <div fxLayout="column">
-        <h6>Alive</h6>
-        <div *ngFor="let card of cardPool">
-            <button (click)="playCard(card)">{{card.rank}} {{card.name}}</button><br>
+<div fxLayout="column" fxLayoutAlign="start stretch">
+    <div class="alive-section">
+        <h1>Alive</h1>
+        <div fxLayout="row wrap">
+            <app-card *ngFor="let card of cardPool" [character]="card" (click)="playCard(card)"></app-card>
         </div>
     </div>
-    <div fxLayout="column">
-        <h6>Dead</h6>
-        <div *ngFor="let spentCard of spentCards">
-            <button (click)="unPlayCard(spentCard)">{{spentCard.rank}} {{spentCard.name}}</button>
+    <div class="dead-section">
+        <h1>Dead</h1>
+        <div fxLayout="row wrap">
+            <app-card *ngFor="let card of spentCards" [character]="card" (click)="unPlayCard(card)"></app-card>
         </div>
     </div>
+    <!-- <div class="reset-section">
+        <div (click)="toggleReset()" class="reset-button" fxLayoutAlign="center center">
+            Reset
+        </div>
+        <div (click)="newGame()" *ngIf="resetOpen" class="reset-button" fxLayoutAlign="center center">
+            Are You Sure
+        </div>
+    </div> -->
 </div>

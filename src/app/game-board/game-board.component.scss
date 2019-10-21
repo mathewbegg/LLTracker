@@ -1,0 +1,15 @@
+@import '../../styles/colors';
+.alive-section {
+    background-color: $board-green;
+}
+
+.dead-section {
+    background-color: $board-red;
+}
+
+.reset-button {
+    width: 100px;
+    height: 50px;
+    background-color: $button-grey;
+    cursor: pointer;
+}

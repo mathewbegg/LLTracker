@@ -1,0 +1,62 @@
+[
+    {
+        "name": "Spy",
+        "rank": 0,
+        "description": "At the end of the round, if you are the only player in the round who played or discarded a Spy, gain 1 favor token.",
+        "pictureURL": "/assets/character-pictures/spy0.png"
+    },
+    {
+        "name": "Guard",
+        "rank": 1,
+        "description": "Choose another player and name a non-Guard card. If that player has that card, they are out of the round.",
+        "pictureURL": "/assets/character-pictures/guard1.png"
+    },
+    {
+        "name": "Priest",
+        "rank": 2,
+        "description": "Choose and look at another player's hand.",
+        "pictureURL": "/assets/character-pictures/priest2.png"
+    },
+    {
+        "name": "Baron",
+        "rank": 3,
+        "description": "Choose and secretly compare hands with another player. Whoever has the lower value is out of the round.",
+        "pictureURL": "/assets/character-pictures/baron3.png"
+    },
+    {
+        "name": "Handmaid",
+        "rank": 4,
+        "description": "Until your next turn, other players cannot choose you for their card effects.",
+        "pictureURL": "/assets/character-pictures/handmaid4.png"
+    },
+    {
+        "name": "Prince",
+        "rank": 5,
+        "description": "Choose any player (including yourself). That player discards their hand and redraws.",
+        "pictureURL": "/assets/character-pictures/prince5.png"
+    },
+    {
+        "name": "Chancellor",
+        "rank": 6,
+        "description": "Draw 2 cards. Keep 1 card and put your other 2 on the bottom of the deck in any order.",
+        "pictureURL": "/assets/character-pictures/chancellor6.png"
+    },
+    {
+        "name": "King",
+        "rank": 7,
+        "description": "Choose and trade hands with another player.",
+        "pictureURL": "/assets/character-pictures/king7.png"
+    },
+    {
+        "name": "Countess",
+        "rank": 8,
+        "description": "If the King or Prince is in your hand, you must play this card.",
+        "pictureURL": "/assets/character-pictures/countess8.png"
+    },
+    {
+        "name": "Princess",
+        "rank": 9,
+        "description": "If you play or discard this card, you are out of the round.",
+        "pictureURL": "/assets/character-pictures/princess9.png"
+    }
+]
